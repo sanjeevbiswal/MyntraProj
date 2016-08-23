@@ -24,4 +24,10 @@ public class Homepage {
     @FindBy(xpath = "//div[@class='navbar']//a")
     public List<WebElement> navbar;
 
+    @FindBy(id = "q")
+    public WebElement searchInputBox;
+
+    @FindBy(xpath = "//span[contains(@class,'icon-search')]")
+    public WebElement searchButton;
+
 }

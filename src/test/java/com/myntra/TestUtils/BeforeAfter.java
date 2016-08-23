@@ -29,12 +29,15 @@ public class BeforeAfter {
     }
 
     @After
-    public void tearDown(Scenario scenario){
+    public void tearDown(Scenario scenario) throws IOException {
+        if(scenario.isFailed()){
+            takeScreenshot(scenario.getName());
+        }
         driver.close();
     }
 
     public static void takeScreenshot(String methodname) throws IOException {
         File file= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(file,new File("./screenshot"+methodname+".jpg"));
+        FileUtils.copyFile(file,new File("./target/screenshot/"+methodname+".jpg"));
     }
 }

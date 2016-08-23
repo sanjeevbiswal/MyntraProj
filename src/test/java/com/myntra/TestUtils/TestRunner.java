@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/features"},
         glue = "com.myntra",
         format = { "pretty", "html:target/site/cucumber-pretty"},
-        monochrome = true,
-        tags = "@headertest"
+        monochrome = true
+        //,tags = "@Search_001"
         //,dryRun = true
 )
 
