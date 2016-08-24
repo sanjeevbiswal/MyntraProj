@@ -18,5 +18,5 @@ import org.junit.runner.RunWith;
         //,dryRun = true
 )
 
-public class TestRunner {
+public class RunCukesTest {
 }
