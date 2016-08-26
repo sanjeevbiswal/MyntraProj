@@ -30,4 +30,13 @@ public class Homepage {
     @FindBy(xpath = "//span[contains(@class,'icon-search')]")
     public WebElement searchButton;
 
+    @FindBy(xpath = "//a[@class='user']")
+    public WebElement userIcon;
+
+    @FindBy(xpath = "//a[text()='Log in']")
+    public WebElement loginButton;
+
+    @FindBy(xpath = "//a[text()='Sign up']")
+    public WebElement signUpButton;
+
 }
