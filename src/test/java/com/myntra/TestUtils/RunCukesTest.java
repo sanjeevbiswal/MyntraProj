@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         glue = "com.myntra",
         format = { "pretty", "html:target/site/cucumber-pretty"},
         monochrome = true
-        //,tags = "@Search_001"
+        ,tags = "@Login_test_002"
         //,dryRun = true
 )
 
