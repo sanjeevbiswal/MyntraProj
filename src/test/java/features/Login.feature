@@ -12,5 +12,5 @@ Feature: Login test
     Given User navigate to 'Myntra' homepage
     When User mouse hover on user icon
     And User clicks on "Sign up" button
-    Then "Sign Up" page should be displayed
+    Then "Log Up" page should be displayed
 
