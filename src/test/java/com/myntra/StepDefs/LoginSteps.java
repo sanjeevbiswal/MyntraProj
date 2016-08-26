@@ -57,6 +57,8 @@ public class LoginSteps {
            case "sign up":
                Assert.assertTrue(loginpage.signUpTitle.getText().contains("Signup"));
                break;
+           default:
+               Assert.assertTrue("Pagename not defined",false);
        }
     }
 }
